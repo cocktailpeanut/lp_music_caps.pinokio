@@ -20,7 +20,7 @@
   }, {
     "method": "browser.open",
     "params": {
-      "uri": "/?selected=Lp Music Caps"
+      "uri": "/?selected=LP-MusicCaps"
     }
   }]
 }
