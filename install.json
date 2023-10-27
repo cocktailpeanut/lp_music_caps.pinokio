@@ -1,0 +1,26 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "message": "git clone https://huggingface.co/spaces/cocktailpeanut/LP-Music-Caps-demo app"
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "venv": "venv",
+      "path": "app",
+      "message": [ "{{pip.install.torch}}", "pip install -r filtered-requirements.txt" ]
+    }
+  }, {
+    "method": "input",
+    "params": {
+      "title": "Install Success",
+      "description": "Go back to the dashboard and launch the app!"
+    }
+  }, {
+    "method": "browser.open",
+    "params": {
+      "uri": "/?selected=Lp Music Caps"
+    }
+  }]
+}
